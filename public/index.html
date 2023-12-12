@@ -1,43 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>BuketLand</title>
+  <link rel="stylesheet" href="styles.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+</head>
+<body>
+<div class="all-container">
+  <header>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <div class="header-content" >
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+      <div class="header-top" style="background-color: darkgrey" >
+        <div class="header-top-left">
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Про Нас</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Доставка</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Оплата</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Відгуки</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Блог</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Контакти</p>
+
+          <div class="vertical-line"></div>
+
+          <p class="text-header-left">Фотозвіт Доставки</p>
+
+          <div class="vertical-line"></div>
+
+        </div>
+        <div class="header-top-right">
+          <div class="2-button">
+            <button>
+              UKR <img src="assets/images/elements/down.svg">
+            </button>
+
+            <button>
+              ГРН <img src="assets/images/elements/down.svg">
+            </button>
+          </div>
+
+          <div class="Track" style="background-color: #52cc7a">
+            <button style="background-color: #52cc7a">
+
+              <img src="assets/images/icons/widshykatu.svg">
+              <p style=" color: aliceblue" > Відстежити</p>
+
+            </button>
+            <div style="background-color: darkgrey" >
+              <button style="background-color: darkgrey">
+                <img class="user" src="assets/images/icons/user.svg">
+                <p>Обліковий запис</p>
+                <img class="user" src="assets/images/elements/down.svg">
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="header-center" style="background-color: white">
+        <div class="header-center-left">
+          <img src="assets/images/logo/buketLogo.svg">
+        </div>
+
+        <div class="header-center-right">
+
+          <div class="header-city">
+            <p>Доставка квітів в <a class="1"  href="#"> Київ <img src="assets/images/icons/location.svg"> </a></p>
+
+          </div>
+
+          <div class="header-search-button">
+            <button>
+              <img src="assets/images/icons/search.svg">
+              <p style="color: rgba(59,59,59,0.83)">Пошук по сайту</p>
+              <button style="background-color: red"> <p style="color: azure">Пошук</p></button>
+            </button>
+
+          </div>
+
+          <div class="header-number">
+            <div class="header-number-top">
+              <p style="color: red"> безкоштовно по Україні</p>
+              <img  src="assets/images/icons/call.svg">
+              <p>0 (800) 211 603</p>
+              <img src="assets/images/elements/down.svg">
+            </div>
+            <div class="header-number-callback">
+              <img src="assets/images/icons/callback.svg">
+              <p style="color:#E64747"><u>Зворотній виклик</u></p>
+            </div>
+
+
+
+          </div>
+
+          <div class="header-button">
+            <div class="vertical-line"></div>
+            <div>
+              <img src="assets/images/icons/favoriteHeart.svg">
+              <p>Бажання</p>
+            </div>
+            <div class="vertical-line"></div>
+
+            <div>
+              <img src="assets/images/icons/shop.svg">
+              <p>Кошик</p>
+            </div>
+            <div class="vertical-line"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="header-bottom" style="background-color: #52cc7a">
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Всі Квіти</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Акції</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Троянди</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Тип букета</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">За ціною</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Квіти</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Привід</p>
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Кому</p>
+
+
+        <div class="vertical-line"></div>
+
+        <p style="color: azure" class="text-header-bottom">Подарунки</p>
+
+        <div class="vertical-line"></div>
+
+      </div>
+
+
+    </div>
+
+  </header>
+
+
+  <div class="main" style="background-color: white">
+    <div class="main-top-left">
+      <div class="Search-buket">
+        <h1>Швидкий підбір букета</h1>
+        <p style="color: darkgrey">Ми підберемо Ва ідеальний варіант</p>
+        <button class="Select-information">
+          Виберіть привід
+          <img src="assets/images/elements/downGreen.svg">
+        </button>
+      </div>
+
+      <div class="Price-bucket">
+        <h1> Вартість  <b style="color: darkgrey">(грн)</b> </h1>
+
+        <button class="minimum-price">
+
+          <p style="color: darkgrey">350</p>
+          <img src="assets/images/elements/UpDown.svg">
+
+        </button>
+
+        <img src="assets/images/elements/resize.svg">
+
+        <button class="maximum-price">
+
+          <p style="color: darkgrey">10000</p>
+          <img src="assets/images/elements/UpDown.svg">
+
+        </button>
+
+        <button  style="background-color: #E64747" class="pick-up" >
+
+          <p style="color: white">Підібрати</p>
+
+        </button>
+
+      </div>
+    </div>
+
+    <div class="main-top-right">
+
+      <img src="assets/images/icons/morefloower.svg">
+
+    </div>
+
+    <div class="long-rectangle"></div>
+
+    <div class="main-information">
+      <h1>Доставка квітів по Києву та області</h1>
+      <p style="color: dimgrey">Доставка квітів Київ - доступна послуга 24/7 (за винятком комендантської години у воєнний час).
+        У магазині квітів БукетЛенд легко купити квіти онлайн та замовити термінову доставку квітів від 30 хвилин!
+        BuketLand - служба доставки квітів і подарунків, одна з найбільших і надійніших в Україні, працює з 2013 року.
+        Замовляйте квіти з доставкою по Києву та всій Україні – величезний асортимент нашого квіткового інтернет магазину дозволяє зробити вибір на будь-який смак:
+        троянди, тюльпани, півонії, квіти в коробці, недорогі букети, 101 троянда, подарунки, кульки та багато іншого. Доставка квітів у Києві вдень - безкоштовна!
+        З легкістю замовляйте квіти для своїх близьких, перебуваючи будь-де в Україні або за кордоном.
+        А найголовніше - це гарантія якості, свіжості та щасливих облич ваших коханих!
+      </p>
+      <p style="color: #52cc7a">Доставка квітів по Україні: <b style="color: dimgrey">Київ</b>
+        цілодобово, Харків, Дніпро, Одеса, Чернігів, Запоріжжя,
+        Львів, Полтава, Чернівці, Кривий Ріг, Миколаїв, Херсон, Вінниця, Черкаси, Рівне,
+        Хмельницький, Житомир, Івано-Франківськ, Тернопіль, Ужгород, Кременчук, Луцьк
+      </p>
+    </div>
+
+    <div class="long-rectangle"></div>
+
+    <div class="main-categories">
+      <div class="logo-flower">
+        <img src="assets/images/icons/flower.svg">
+        <h1 style="color: #E64747">Найкращий вибір до Дня Народження  </h1>
+      </div>
+
+      <div class="flower-categories">
+
+
+        <div class="flower">
+          <div>
+            <img src="assets/images/product/Orion.svg">
+            <p>Букет в асортименті з півонією та трояндами «Orion»</p>
+          </div>
+
+          <div class="cost">
+            <p style="color: #52cc7a">1571 грн</p>
+            <p style="color: #E64747"> <strike>1972</strike>  грн</p>
+            <img src="assets/images/icons/favoriteHeart.svg">
+
+            <button class="flower-buy" style="color: #52cc7a">
+              <p style="color: #52cc7a">Замовити</p>
+            </button>
+          </div>
+
+
+        </div>
+
+        <div class="flower">
+          <div>
+            <img src="assets/images/product/Polly.svg">
+            <p>Авторський букет квітів «Polly»</p>
+          </div>
+
+          <div class="cost">
+            <p style="color: #52cc7a">1571 грн</p>
+            <p style="color: #E64747"> <strike>1972</strike>  грн</p>
+            <img src="assets/images/icons/favoriteHeart.svg">
+
+
+            <button class="flower-buy" style="color: #52cc7a">
+              <p style="color: #52cc7a">Замовити</p>
+            </button>
+          </div>
+
+
+        </div>
+
+        <div class="flower">
+          <div>
+            <img src="assets/images/product/Sunshine.svg">
+            <p>Авторський букет квітів «Sunshine»</p>
+          </div>
+
+          <div class="cost">
+            <p style="color: #52cc7a">1571 грн</p>
+            <p style="color: #E64747"> <strike>1972</strike>  грн</p>
+            <img src="assets/images/icons/favoriteHeart.svg">
+
+            <button class="flower-buy" style="color: #52cc7a">
+              <p style="color: #52cc7a">Замовити</p>
+            </button>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="empty-space"></div>
+
+  <footer style="background-color: white">
+    <div class="block-information">
+
+      <div class="information">
+        <h1 style="color: #E64747">Інформація</h1>
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Відгуки </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Блог </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Контакти </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Про Нас </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Доставка </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Оплата </p>
+        </div>
+
+      </div>
+
+      <div class="categories">
+        <h1 style="color: #E64747">Категорії</h1>
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Букети </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Квіти </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Привід </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Кому </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Подарунки </p>
+        </div>
+      </div>
+
+      <div class="account">
+        <h1 style="color: #E64747">Обліковий запис</h1>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Персональна інформація </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Історія замовлень </p>
+        </div>
+
+        <div class="inf">
+          <img src="assets/images/elements/right.svg">
+          <p> Статус замовлення </p>
+        </div>
+
+
+
+      </div>
+
+      <div class="contacts">
+        <h1 style="color: #E64747">Контакти</h1>
+        <div class="inf1">
+          <img src="assets/images/icons/location.svg">
+          <p>
+            Центральний офіс — Україна,
+            м.  Київ, вул. Глибочицька 40г
+            відчинено з 09:00 до 20:00 щодня
+          </p>
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/phone.svg">
+          <p style="color: #E64747" >0 (800) 211 603 </p>
+
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/phone.svg">
+          <p style="color: #E64747" > +380 (98) 060 30 30</p>
+
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/phone.svg">
+          <p style="color: #E64747" > +380 (73) 060 30 30</p>
+
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/phone.svg">
+          <p style="color: #E64747" > +380 (50) 060 30 30</p>
+
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/phone.svg">
+          <p style="color: #E64747" > +380 (67) 060 30 30</p>
+
+        </div>
+
+        <div class="inf1">
+
+          <p> (Viber / WhatsApp / Telegram)</p>
+
+        </div>
+
+        <div class="inf1">
+
+          <img src="assets/images/icons/mail.svg  ">
+          <p style="color: #E64747" > info.buketland@gmail.com</p>
+
+        </div>
+
+        <div class="inf2">
+          <img src="assets/images/icons/instagram.svg">
+          <img src="assets/images/icons/facebook.svg">
+          <img src="assets/images/icons/pinterest.svg">
+          <img src="assets/images/icons/youtube.svg">
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </footer>
+</div>
+
+</body>
 </html>
